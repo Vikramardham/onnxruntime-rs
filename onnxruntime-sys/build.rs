@@ -23,11 +23,11 @@ const ORT_RELEASE_BASE_URL: &str = "https://github.com/microsoft/onnxruntime/rel
 /// * "download": Download a pre-built library from upstream. This is the default if `ORT_STRATEGY` is not set.
 /// * "system": Use installed library. Use `ORT_LIB_LOCATION` to point to proper location.
 /// * "compile": Download source and compile (TODO).
-const ORT_ENV_STRATEGY: &str = "ORT_STRATEGY";
+const ORT_ENV_STRATEGY: &str = "system";
 
 /// Name of environment variable that, if present, contains the location of a pre-built library.
 /// Only used if `ORT_STRATEGY=system`.
-const ORT_ENV_SYSTEM_LIB_LOCATION: &str = "ORT_LIB_LOCATION";
+const ORT_ENV_SYSTEM_LIB_LOCATION: &str = "../onnxruntime";
 /// Name of environment variable that, if present, controls wether to use CUDA or not.
 const ORT_ENV_GPU: &str = "ORT_USE_CUDA";
 
